@@ -2,7 +2,7 @@
 
 **instaounce** is a photo sharing app using Parse as its backend.
 
-Time spent: **20** hours spent in total
+Time spent: **1/3** hour spent in total
 
 ## User Stories
 
