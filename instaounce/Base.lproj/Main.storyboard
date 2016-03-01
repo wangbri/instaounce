@@ -17,24 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ly-9h-vL6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ly-9h-vL6">
                                 <rect key="frame" x="38" y="84" width="244" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QND-wH-wDi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QND-wH-wDi">
                                 <rect key="frame" x="38" y="162" width="244" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOe-YX-0HO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOe-YX-0HO">
                                 <rect key="frame" x="38" y="224" width="244" height="30"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
                                     <action selector="onSignin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xC8-8g-FLB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiC-6w-UGk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiC-6w-UGk">
                                 <rect key="frame" x="38" y="269" width="244" height="30"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
@@ -43,6 +43,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iOe-YX-0HO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="38" id="00o-qa-Cs8"/>
+                            <constraint firstItem="QND-wH-wDi" firstAttribute="top" secondItem="7Ly-9h-vL6" secondAttribute="bottom" constant="48" id="3le-TL-1Ci"/>
+                            <constraint firstItem="7Ly-9h-vL6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="38" id="7qd-XZ-gIG"/>
+                            <constraint firstAttribute="trailing" secondItem="QND-wH-wDi" secondAttribute="trailing" constant="38" id="9s0-p8-ke6"/>
+                            <constraint firstItem="BiC-6w-UGk" firstAttribute="top" secondItem="iOe-YX-0HO" secondAttribute="bottom" constant="15" id="B7g-9g-Z01"/>
+                            <constraint firstItem="7Ly-9h-vL6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="FMY-Ik-jJ8"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ly-9h-vL6" secondAttribute="trailing" constant="38" id="KCU-JK-5YX"/>
+                            <constraint firstItem="QND-wH-wDi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="38" id="OzJ-0N-XkS"/>
+                            <constraint firstItem="BiC-6w-UGk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="38" id="aBx-Kf-Thg"/>
+                            <constraint firstAttribute="trailing" secondItem="iOe-YX-0HO" secondAttribute="trailing" constant="38" id="csz-Jh-K9g"/>
+                            <constraint firstAttribute="trailing" secondItem="BiC-6w-UGk" secondAttribute="trailing" constant="38" id="gTu-fg-A90"/>
+                            <constraint firstItem="iOe-YX-0HO" firstAttribute="top" secondItem="QND-wH-wDi" secondAttribute="bottom" constant="32" id="plm-uD-gnf"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordField" destination="QND-wH-wDi" id="sbg-SG-rSD"/>
