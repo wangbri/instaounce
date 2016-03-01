@@ -12,6 +12,8 @@
 		1140723D1C85121600BC9136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1140723B1C85121600BC9136 /* Main.storyboard */; };
 		1140723F1C85121600BC9136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1140723E1C85121600BC9136 /* Assets.xcassets */; };
 		114072421C85121600BC9136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114072401C85121600BC9136 /* LaunchScreen.storyboard */; };
+		1140724A1C85144000BC9136 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114072491C85144000BC9136 /* LoginViewController.swift */; };
+		6553D6D78F6DC3397D7E34C4 /* Pods_instaounce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7180268C05964B355C52D31 /* Pods_instaounce.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		1140723E1C85121600BC9136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114072411C85121600BC9136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114072431C85121600BC9136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114072491C85144000BC9136 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D7180268C05964B355C52D31 /* Pods_instaounce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaounce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68BC28EE06040B6687C0B7D /* Pods-instaounce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaounce.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instaounce/Pods-instaounce.debug.xcconfig"; sourceTree = "<group>"; };
+		EADCF0D0B3E9C0A3D143B3C2 /* Pods-instaounce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaounce.release.xcconfig"; path = "Pods/Target Support Files/Pods-instaounce/Pods-instaounce.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6553D6D78F6DC3397D7E34C4 /* Pods_instaounce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08531915E25321495BC94E65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E68BC28EE06040B6687C0B7D /* Pods-instaounce.debug.xcconfig */,
+				EADCF0D0B3E9C0A3D143B3C2 /* Pods-instaounce.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1140722B1C85121600BC9136 = {
 			isa = PBXGroup;
 			children = (
 				114072361C85121600BC9136 /* instaounce */,
 				114072351C85121600BC9136 /* Products */,
+				08531915E25321495BC94E65 /* Pods */,
+				2ADBE7CF2B81EE417478E9B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				1140723E1C85121600BC9136 /* Assets.xcassets */,
 				114072401C85121600BC9136 /* LaunchScreen.storyboard */,
 				114072431C85121600BC9136 /* Info.plist */,
+				114072491C85144000BC9136 /* LoginViewController.swift */,
 			);
 			path = instaounce;
+			sourceTree = "<group>";
+		};
+		2ADBE7CF2B81EE417478E9B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7180268C05964B355C52D31 /* Pods_instaounce.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 114072461C85121600BC9136 /* Build configuration list for PBXNativeTarget "instaounce" */;
 			buildPhases = (
+				5EFD041AAB70AE62F8E66214 /* Check Pods Manifest.lock */,
 				114072301C85121600BC9136 /* Sources */,
 				114072311C85121600BC9136 /* Frameworks */,
 				114072321C85121600BC9136 /* Resources */,
+				DEA94FFF837CBEA45765B8BA /* Embed Pods Frameworks */,
+				84DB854669BC2FCDBB86973D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +160,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5EFD041AAB70AE62F8E66214 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84DB854669BC2FCDBB86973D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instaounce/Pods-instaounce-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEA94FFF837CBEA45765B8BA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instaounce/Pods-instaounce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		114072301C85121600BC9136 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1140724A1C85144000BC9136 /* LoginViewController.swift in Sources */,
 				1140723A1C85121600BC9136 /* ViewController.swift in Sources */,
 				114072381C85121600BC9136 /* AppDelegate.swift in Sources */,
 			);
@@ -245,6 +324,7 @@
 		};
 		114072471C85121600BC9136 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68BC28EE06040B6687C0B7D /* Pods-instaounce.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = instaounce/Info.plist;
@@ -256,6 +336,7 @@
 		};
 		114072481C85121600BC9136 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADCF0D0B3E9C0A3D143B3C2 /* Pods-instaounce.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = instaounce/Info.plist;
@@ -284,6 +365,7 @@
 				114072481C85121600BC9136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
