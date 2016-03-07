@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var storyboard = UIStoryboard(name: "Main", bundle: nil)
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Parse.initializeWithConfiguration(
@@ -24,6 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://stormy-bayou-84748.herokuapp.com/parse"
             })
         )
+        
+        //Parse.setApplicationId("myAppId", clientKey: "myClientKey")
+        
+        // check if user is logged in.
+        if PFUser.currentUser() != nil {
+            let vc = storyboard.instantiateViewControllerWithIdentifier("mainView") as! MainViewController
+            
+            window?.rootViewController = vc
+            // if there is a logged in user then load the home view controller
+        }
         
         return true
     }

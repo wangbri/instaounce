@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110CAB8E1C865A0500913DF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110CAB8D1C865A0500913DF0 /* MainViewController.swift */; };
 		114072381C85121600BC9136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114072371C85121600BC9136 /* AppDelegate.swift */; };
 		1140723A1C85121600BC9136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114072391C85121600BC9136 /* ViewController.swift */; };
 		1140723D1C85121600BC9136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1140723B1C85121600BC9136 /* Main.storyboard */; };
 		1140723F1C85121600BC9136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1140723E1C85121600BC9136 /* Assets.xcassets */; };
 		114072421C85121600BC9136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114072401C85121600BC9136 /* LaunchScreen.storyboard */; };
 		1140724A1C85144000BC9136 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114072491C85144000BC9136 /* LoginViewController.swift */; };
+		115A8AE61C8D510B00A51D12 /* ParsePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A8AE51C8D510B00A51D12 /* ParsePost.swift */; };
+		115A8AE81C8D56E900A51D12 /* picCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A8AE71C8D56E900A51D12 /* picCell.swift */; };
+		115A8AEA1C8D58D400A51D12 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A8AE91C8D58D400A51D12 /* PostViewController.swift */; };
 		6553D6D78F6DC3397D7E34C4 /* Pods_instaounce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7180268C05964B355C52D31 /* Pods_instaounce.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110CAB8D1C865A0500913DF0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		114072341C85121600BC9136 /* instaounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114072371C85121600BC9136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114072391C85121600BC9136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +30,9 @@
 		114072411C85121600BC9136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114072431C85121600BC9136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		114072491C85144000BC9136 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		115A8AE51C8D510B00A51D12 /* ParsePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsePost.swift; sourceTree = "<group>"; };
+		115A8AE71C8D56E900A51D12 /* picCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = picCell.swift; sourceTree = "<group>"; };
+		115A8AE91C8D58D400A51D12 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		D7180268C05964B355C52D31 /* Pods_instaounce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaounce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68BC28EE06040B6687C0B7D /* Pods-instaounce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaounce.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instaounce/Pods-instaounce.debug.xcconfig"; sourceTree = "<group>"; };
 		EADCF0D0B3E9C0A3D143B3C2 /* Pods-instaounce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaounce.release.xcconfig"; path = "Pods/Target Support Files/Pods-instaounce/Pods-instaounce.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +87,10 @@
 				114072401C85121600BC9136 /* LaunchScreen.storyboard */,
 				114072431C85121600BC9136 /* Info.plist */,
 				114072491C85144000BC9136 /* LoginViewController.swift */,
+				110CAB8D1C865A0500913DF0 /* MainViewController.swift */,
+				115A8AE51C8D510B00A51D12 /* ParsePost.swift */,
+				115A8AE71C8D56E900A51D12 /* picCell.swift */,
+				115A8AE91C8D58D400A51D12 /* PostViewController.swift */,
 			);
 			path = instaounce;
 			sourceTree = "<group>";
@@ -215,7 +227,11 @@
 			files = (
 				1140724A1C85144000BC9136 /* LoginViewController.swift in Sources */,
 				1140723A1C85121600BC9136 /* ViewController.swift in Sources */,
+				115A8AEA1C8D58D400A51D12 /* PostViewController.swift in Sources */,
 				114072381C85121600BC9136 /* AppDelegate.swift in Sources */,
+				110CAB8E1C865A0500913DF0 /* MainViewController.swift in Sources */,
+				115A8AE81C8D56E900A51D12 /* picCell.swift in Sources */,
+				115A8AE61C8D510B00A51D12 /* ParsePost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
